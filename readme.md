@@ -9,7 +9,7 @@ This is Xinran Duan's project doc for Web pj2.
 - 姓名：段欣然
 - 学号：18307130295
 - Github 地址：https://github.com/Anemoneiro/19ss-web-Project2-TravelPic/
-- 项目部署地址：
+- 项目部署地址：http://182.92.167.230/
 - 开发编辑器：PHPStorm + VS Code
 - 开发系统：Windows 10，分辨率1920*1280
 - 测试浏览器：Google Chrome
@@ -355,7 +355,9 @@ jquery-confirm的div是在整个页面div之下，在页面资源加载完成之
 
 ##### 部署服务器
 
-我对项目在阿里云上进行了部署，通过ip地址可以访问。
+我对项目在阿里云上进行了部署，通过ip地址可以访问。在项目部署后，要注意将上传图片的相对路径改为绝对路径，将localhost改为`127.0.0.1`，同时修改相应的password。对于5.7版本的mysql，由于我使用了GROUP BY，需要更改全局变量：
+
+`set @@global.sql_mode=(select replace(@@global.sql_mode,'ONLY_FULL_GROUP_BY', ''));`
 
 
 
@@ -470,4 +472,4 @@ js代码如下所示：
 
 当然，这次PJ我开工较晚，最初进度较慢，以至于到了最后时间有些紧张，无法修复例如jquery-confirm带来的不影响功能的小bug，也是一个遗憾。
 
-最后，很感谢老师和助教一学期以来的辛苦付出！# 19ss-web-Project2-TravelPic
+最后，很感谢老师和助教一学期以来的辛苦付出！

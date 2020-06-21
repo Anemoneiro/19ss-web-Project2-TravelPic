@@ -281,6 +281,15 @@ function uploadAll(){
 
     let file = $("#upLoadImgFile")[0].files[0];
 
+    if (file.type !== 'image/png' && file.type !== 'image/jpeg' && file.type !== 'image/jpg' && file.type !== 'image/gif' && file.type !== 'image/bmp') {
+        $.alert({
+            title: '提示',
+            content: '图片格式错误：仅支持jpg/jpeg/png/bmp/gif！',
+            type: 'red',
+        });
+        return;
+    }
+
     //图片大小有限制吗？
     if (file !== undefined && file.size > 41943040) {
         $.dialog({

@@ -57,6 +57,7 @@ if (isset($_SESSION['Username'])) {
 
             $root = dirname(__FILE__,3);
             $uploadPath = $root . '/img/travel-images/large/' . $picPath;
+            //$uploadPath = '/var/www/html/img/travel-images/large/' . $picPath; //部署用
             //echo $uploadPath;
 
             //之后部署可能要改成绝对路径!!

@@ -1,8 +1,9 @@
 <?php
-$server="localhost";
+$server="127.0.0.1";
 $sqlname="root";
 $sqlpassword="";
-$dbname="web-pj2";
+//$sqlpassword="123456";//部署用
+$dbname="web_pj2";
 
 $connect = new mysqli($server, $sqlname, $sqlpassword, $dbname, '3306');
 
