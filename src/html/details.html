@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>图片详情 - TravelPic</title>
+        <meta name="description" content="details page">
+        <meta name="author" content="Xinran Duan">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.bootcss.com/jquery-confirm/3.2.3/jquery-confirm.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/header&footer.css" rel="stylesheet" type="text/css">
+        <link href="../css/piccss.css" rel="stylesheet" type="text/css">
+        <link href="../css/details.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery-confirm/3.2.3/jquery-confirm.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery.form/4.2.1/jquery.form.js"></script>
+    </head>
+
+    <body>
+        <div id="root">
+            <header>
+                <nav>
+                    <div class="logo">
+                        <a href="homepage.html">
+                            <img src="../../img/icons/travelpic_logo.png" alt="TravelPic_logo" class="TravelPic_logo">
+                        </a>
+                    </div>
+                    <div class="HeaderTabs">
+                        <ul>
+                            <li><a href="homepage.html" class="topButton" id="Homepage">首页</a></li>
+                            <li><a href="browse.html" class="topButton" id="Browser">浏览</a></li>
+                            <li><a href="search.html" class="topButton" id="Search">搜索</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="UserInfo">
+                    <ul>
+                        <li>
+                            <a href="login.html" class="topButton" id="Login" style="display: none;">登录</a>
+                            <div href="" class="topButton" id="Personal" style="display: none;">个人中心</div>
+                            <div class="dropdown_col">
+                                <ul>
+                                    <li><a href="upload.html" class="topUserButton" id="Upload">上传</a> </li>
+                                    <li><a href="myphotos.html" class="topUserButton" id="MyPhoto">我的照片</a></li>
+                                    <li><a href="myfavorites.html" class="topUserButton" id="MyFavor">我的收藏</a></li>
+                                    <li><div class="topUserButton" id="Logout">登出</div></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            
+            <div class="main-details">
+                <div class="box-header">
+                    <h2 class="box-title">图片详情</h2>
+                </div>
+                <table class="box-body-content">
+                    <tr>
+                        <td colspan="2">
+                            <div class="box-body-header">
+                                <ul>
+                                    <li><span class="box-body-title" id="photoName">照片名称</span></li>
+                                    <li><span class="box-body-title">by</span></li>
+                                    <li><span class="box-body-title" id="photoOwner">用户名</span></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="picDisplayBox-detail">
+                            <div class="realPicDetail">
+                            </div>
+                        </td>
+        
+                        <td class="box-body-content-aside">
+                            <table class="box-body-content-likes">
+                                <tr>
+                                    <h4 class="box-title">收藏数目</h4>
+                                </tr>
+                                <tr>
+                                    <div class="box-body-content-likeNumbers">
+                                    </div>
+                                </tr>
+                            </table>
+        
+                            <table class="box-body-content-imageDetails">
+                                <tr class="tabletext">
+                                    <h4 class="box-title">详细信息</h4>
+                                </tr>
+                                <tr>
+                                    <div class="box-body-content-detailMessage">
+                                        <ul>
+                                            <li><span class="box-details-title">主题：</span><span class="box-details-titleContent" id="photoTopic"></span></li>
+                                            <li><span class="box-details-title">国家：</span><span class="box-details-titleContent" id="photoCountry"></span></li>
+                                            <li><span class="box-details-title">城市：</span><span class="box-details-titleContent" id="photoCity"></span></li>
+                                        </ul>
+                                    </div>
+                                </tr>
+                            </table>
+                            <div class="box-body-Btn">
+                                <button type="button" id="favorBtn" onclick="favorThePic()">♥ 收藏</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="box-body-content-discription"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <footer class="copyright">
+                Copyright© by Xinran Duan. All Rights Reserved. 备案号：沪ORZ备18307130295号-16
+            </footer>
+            <script src="../js/details.js"></script>
+        </div>
+    </body>
+</html>

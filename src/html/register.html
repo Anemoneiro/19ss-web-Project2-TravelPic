@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TravelPic - 向世界分享你的旅行记忆</title>
+        <meta name="description" content="register page">
+        <meta name="author" content="Xinran Duan">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.bootcss.com/jquery-confirm/3.2.3/jquery-confirm.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/register.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery-confirm/3.2.3/jquery-confirm.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery.form/4.2.1/jquery.form.js"></script>
+
+    </head>
+
+    <body>
+        <div id="root">
+            <div class="background"></div>
+            <header>
+               <div class="topNav">
+                    <a class="topButton" href="login.html">登录</a>
+                    <a class="topButtonActive" href="register.html">注册</a>
+                </div> 
+            </header>
+
+            <h1>TravelPic - 向世界分享你的旅行记忆</h1>
+
+            <div class="main">
+                <div class="formBody">
+                    <h2>用户注册</h2>
+                    <form class="registerForm">
+                        <input type="text" class="formElem" id="username" placeholder="请输入账号：5-30位" autocomplete="off">
+                        <span class="warning">5-30字符，以字母开头，仅包含数字、字母、下划线</span>
+                        <input type="text" class="formElem" id="email" placeholder="请输入E-mail" autocomplete="off">
+                        <span class="warning">请保障正确的邮箱格式：登录名 + @ + 域名</span>
+                        <input type="password" class="formElem" id="password1" placeholder="请输入密码：8-30位" autocomplete="off">
+                        <span class="warning">8-30字符，仅包含字母、数字、下划线，且至少包含其中2种</span>
+                        <input type="password" class="formElem" id="password2" placeholder="请确认密码" autocomplete="off">
+                        <span class="warning"></span>
+                        <input class="submitButton" type="button" id="submitBtn" value="注册">
+                    </form>
+                </div>
+            </div>
+
+            <footer class="copyright">
+                Copyright© by Xinran Duan. All Rights Reserved. 备案号：沪ORZ备18307130295号-16
+            </footer>
+            <script src="../js/register.js"></script>
+        </div>
+    </body>
+</html>

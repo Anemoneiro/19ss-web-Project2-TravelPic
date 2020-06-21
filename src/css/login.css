@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    margin: 0;
+    color: #000000;
+    background-color: #f6f6f6;
+    letter-spacing: 2.5px;
+}
+
+/*设置背景图片，美化 设置min值防止页面变形以致于加载不出全部图片*/
+.background {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    min-width: 1000px;
+    z-index:-10;
+    zoom: 1;
+    background-image: url(../../img/background/ornamental-cherry.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -10;
+    min-width: 450px;
+    min-height: 450px;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #df5799;
+}
+
+header {
+    height: 70px;
+}
+
+.topNav {
+    float: right;
+    margin: auto 2em;
+    margin-top: 30px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.topButton {
+    background: #df5799;
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 5rem;
+    opacity: 0.9;
+    padding: 10px 0 0 3px;
+    margin: 0 5px;
+    height: 35px;
+    width: 80px;
+    text-align: center;
+}
+
+.topButton:hover {
+    background: #ffffff;
+    color: #df5799;
+    display: inline-block;
+    border-radius: 5rem;
+    opacity: 0.9;
+    padding: 10px 0 0 3px;
+    margin: 0 5px;
+    height: 35px;
+    width: 80px;
+    text-align: center;
+}
+
+.topButtonActive {
+    background: #ffffff;
+    color: #df5799;
+    display: inline-block;
+    border-radius: 5rem;
+    opacity: 0.9;
+    padding: 10px 0 0 3px;
+    margin: 0 5px;
+    height: 35px;
+    width: 80px;
+    text-align: center;
+}
+
+a {
+    text-decoration:none;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 0.5em 0;
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+    text-shadow:0 0 0.3em #df5799,-0 -0 0.1em #df5799;
+}
+
+h2 {
+    color: #ffffff;
+    margin: 0.5em 0 0.9em 0;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.main{
+    background-color: rgba(255,255, 255, 0.5);
+    border-radius:0.5rem;
+    box-shadow: 0px 20px 20px -20px #756a6f;
+    line-height: 150%;
+    margin: 3% 25% 0 25%;
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.formBody {
+    margin: 0 auto;
+}
+
+.loginForm {
+    text-align: center;
+}
+
+.formElem {
+    border-radius: 10rem;
+    border: 1px solid #d1d3e2;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.2em;
+    padding: 12px 30px;
+    outline: none; 
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 14px;
+    height: 45px;
+}
+
+.warning {
+    display: block;
+    margin: 0 auto;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.toRegister {
+    color: #676975;
+    font-size: 13px;
+    text-shadow: 0 0 0.3em #e4e4e47a,-0 -0 0.3em #e4e4e47a;
+}
+
+.jumpToRegister {
+    color: #df5799;
+    text-shadow: none;
+}
+
+/*美化提交按钮，添加弧度和focus时的边框*/
+.submitButton {
+    background-color: #df5799;
+    border:1px solid #df5799;
+    border-radius: 10rem;
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.4em;
+    padding: 12px 90px;
+    opacity: 0.8;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    cursor: pointer;
+    outline:none ;
+}
+
+input:focus, textarea:focus{
+    border-radius: 10rem;
+    border:2px solid rgba(255, 170, 202, 0.74);
+}
+
+footer{
+    background-color: transparent;
+    color: #ffffff;
+    clear: both;
+    margin: 30px 0 0;
+    position: relative;
+    font-size: 13px;
+    text-align: center;
+    text-shadow: 0 0 0.3em #df5799,-0 -0 0.15em #df5799;
+}

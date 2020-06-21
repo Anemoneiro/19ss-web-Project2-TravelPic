@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    margin: 0;
+    color: #000000;
+    background-color: #f6f6f6;
+    letter-spacing: 2.5px;
+}
+
+/*导航栏固定在顶部，且一直在最前*/
+header {
+    color: #000000;
+    background-color: #ffffff;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    display: inline-block;
+}
+
+.logo {
+    margin-left: 15px;
+    position: absolute;
+}
+
+.TravelPic_logo {
+    width: 124px;
+    height: 62px;
+}
+
+.HeaderTabs {
+    float: left;
+    left: 140px;
+    margin: auto 1.25em;
+    margin-top: 28px;
+    font-weight: bolder;
+    font-size: 16px;
+    position: relative;
+}
+
+/*美化压缩时导航栏的显示*/
+.HeaderTabs ul li{
+    display: inline-block;
+}
+
+.topButton {
+    color: #000000;
+    display: inline-block;
+    border-radius: 5rem;
+    opacity: 0.9;
+    padding: 10px 0 0 3px;
+    margin: 0 3px;
+    height: 30px;
+    width: 105px;
+    text-align: center;
+    border-radius: 0;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.UserInfo {
+    float: right;
+    margin: auto 2em;
+    margin-top: 28px;
+    font-weight: bolder;
+    font-size: 16px;
+    position: relative;
+    border-radius: 0.2rem;
+    background-color: #ffffff;
+}
+
+/*隐藏二级下拉菜单，鼠标移动至个人中心上才显示*/
+.UserInfo ul li:hover ul{
+    display: block;
+}
+
+.topUserButton {
+    color: #000000;
+    position: relative;
+    float: right;
+    border-radius: 5rem;
+    opacity: 0.9;
+    padding: 10px 5px 0 3px;
+    margin: 0 2.5px;
+    height: 30px;
+    width: 105px;
+    text-align: right;
+    font-size: 14px;
+}
+
+/*为二级下拉菜单设置指示图片*/
+#Upload {
+    background: url(../../img/icons/upload.png) no-repeat 10px center;
+    background-size:15px 15px;
+}
+
+#MyPhoto {
+    background: url(../../img/icons/picture.png) no-repeat 10px center;
+    background-size:15px 15px;
+}
+
+#MyFavor {
+    background: url(../../img/icons/star-off.png) no-repeat 10px center;
+    background-size:15px 15px;
+}
+
+#Logout {
+    background: url(../../img/icons/user.png) no-repeat 10px center;
+    background-size:15px 15px;
+    cursor: pointer;
+}
+
+/*调整二级菜单的显示，默认为none，美化二级菜单*/
+.dropdown_col {
+    color: #000000;
+    opacity: 0.9;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    width: 105px;
+    position: absolute;
+    z-index: 10;
+    text-align: right;
+}
+
+.dropdown_col ul {
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    display: none;
+    position: absolute;
+}
+
+.dropdown_col ul li a {
+    height: 30px;
+    width: 105px;
+}
+
+/*指示色彩，当前页面高亮在每一页分别显示*/
+#Homepage:hover {
+    color: #bb2e36;
+}
+
+#Browser:hover {
+    color: #f7b157;
+}
+
+#Search:hover {
+    color: #3583fb;
+}
+
+#Personal:hover {
+    color: #79438d;
+}
+
+#Upload:hover {
+    color: #bb2e36;
+}
+
+#MyPhoto:hover {
+    color: #f7b157
+}
+
+#MyFavor:hover {
+    color: #3583fb;
+}
+
+#Login:hover {
+    color: #79438d;
+}
+
+#Logout:hover {
+    color: #79438d;
+}
+
+a {
+    text-decoration: none;
+    color: #333435;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #333435;
+}
+
+h2 {
+    color: #333435;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h4 {
+    color: #333435;
+    margin: 0.5em 0 0.5em 0.6em;
+    font-size: 16px;
+    text-align: initial;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bolder;
+}
+
+footer{
+    background-color: transparent;
+    color: #333435;
+    clear: both;
+    margin: 15px 0 15px 0;
+    font-size: 13px;
+    position: relative;
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+    line-height: 130%;
+    font-size: 13px;
+}
+
+.copyright {
+    margin-top: 5px;
+}

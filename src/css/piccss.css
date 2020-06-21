@@ -1,0 +1,37 @@
+/*以图片作为div的背景图实现自由样式图片*/
+.realPic{
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%;
+    overflow: hidden;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    cursor: pointer;
+}
+
+#picA {
+    background-image: url(../../img/travel-images/medium/5855191275.jpg);
+}
+
+#picB {
+    background-image: url(../../img/travel-images/medium/5855174537.jpg);
+}
+
+#picC {
+    background-image: url(../../img/travel-images/medium/9496799098.jpg);
+}
+
+#picD {
+    background-image: url(../../img/travel-images/medium/9504609042.jpg);
+}
+
+#picE {
+    background-image: url(../../img/travel-images/medium/9496787858.jpg);
+}
+
+#picF {
+    background-image: url(../../img/travel-images/medium/8731523536.jpg);
+}

@@ -1,0 +1,120 @@
+/*指示色彩，当前页面则高亮*/
+#Homepage {
+    color: #bb2e36;
+}
+
+/*返回顶部和刷新图片功能按钮*/
+.CornerButtons{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 11;
+  }
+
+.CornerButtons #back-to-top input{
+    border: none;
+    background: #d1d1d1 url(../../img/icons/arrow-up.png) no-repeat center center;
+    background-size: 15px;
+    border-radius: 6px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.CornerButtons #back-to-top input:hover {
+    background: #b6b6b6 url(../../img/icons/arrow-up.png) no-repeat center center;
+    background-size: 15px;
+}
+
+.CornerButtons #refresh input {
+    border: none;
+    background: #d1d1d1 url(../../img/icons/reload.png) no-repeat center center;
+    background-size: 15px;
+    border-radius: 6px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.CornerButtons #refresh input:hover {
+    background: #b6b6b6 url(../../img/icons/reload.png) no-repeat center center;
+    background-size: 15px;
+}
+
+.topImage {
+    overflow: hidden;
+}
+
+.topImgItem {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+h4 {
+    color: #333435;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.picDisplay{
+    margin: 5% 0 70% 9%;
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+/*图片展示box，利用calc函数计算百分比保持响应式布局*/
+.picDisplayBox{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+    line-height: 150%;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: calc(33.3333% - 40px);
+    min-width: 300px;
+    height: 360px;
+    padding: 20px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+/*自由样式图片容器*/
+.picDisplayBox-detail {
+    margin: 15px auto;
+    width: 225px;
+    height: 225px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(36, 37, 38, 0.08);
+    overflow: hidden;
+}
+
+/*图片描述，实现多余部分隐藏，用...代替*/
+.picDisplayBox-item {
+    display: block;
+    width: calc(100%);
+}
+
+.picDisplayBox-item p{
+    margin: 0 10px;
+    font-size: 14px;
+    text-align: justify;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

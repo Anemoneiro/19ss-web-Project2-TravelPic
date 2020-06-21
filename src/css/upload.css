@@ -1,0 +1,203 @@
+#Upload {
+    color: #bb2e36;
+}
+
+.main-upload {
+    margin: 100px 15% 100px 12%;
+    width: calc(80%);
+    min-width: 500px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+    margin-right: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.box-body-upload ul {
+    display: inline-block;
+    width: calc(95%);
+}
+
+.box-body-upload ul li{
+    margin-top: 6px;
+    margin-left: 6px;
+    width: calc(100%);
+}
+
+.box-body-uploadPic {
+    margin-left: 45%;
+}
+
+.box-body-uploadPic ul {
+    display: inline-block;
+}
+
+.box-body-uploadPic ul li{
+    margin-top: 10px;
+}
+
+#Preview-noPic{
+    margin-left: -10px;
+}
+
+#Preview-Pic{
+    display: table-row;
+    width: 40%;
+    margin-left: -13%;
+}
+
+#uploadBtn {
+    background-color: #777777;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.2em;
+    position: relative;
+    height: 35px;
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    transition: box-shadow 0.25s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    padding: 4px 0 0 25px;
+    line-height: 28px;
+}
+
+#uploadBtn input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+
+#uploadBtn :hover {
+    color: #666666;
+    background-color: #dddddd;
+    border-color: #ccc;
+    text-decoration: none;
+}
+
+.UploadText {
+    border-radius: 0.2rem;
+    border: 1px solid #d1d3e2;
+    float: left;
+    height: 22px;
+    width: calc(100%);
+    outline: none; 
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.box-body-filter ul{
+    display: inline-block;
+    position: relative;
+    width: 270px;
+}
+
+.dropdown-filter {
+    width: 260px;
+    position: relative;
+    vertical-align: middle;
+    padding: 0;
+    background-color: #ffffff;
+    color: #555555;
+    border: 1px solid #d1d3e2;
+    text-shadow: none;
+    border-radius: 0.2em;
+    transition: box-shadow 0.25s ease;
+    z-index: 2;
+    height: 40px;
+}
+
+.dropdown-filter:hover {
+    box-shadow:0 1px 3px rgba(185, 185, 185, 0.5);
+}
+
+.dropdown-filter select {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url(../../img/icons/d-caret.png) no-repeat 15px center;
+    background-size: 15px 15px;
+    padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 2.5px;
+    overflow-scrolling: auto;
+}
+
+.dropdown-filter select:focus {
+    outline: none;
+}
+
+.dropdown-filter select option {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 2.5px;
+}
+
+textarea {
+    resize: none;
+    height: 100px !important ;
+}
+
+#submitPicAllBtn{
+    background-color: #777777;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.2em;
+    position: relative;
+    height: 30px;
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    transition: box-shadow 0.25s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+}
+
+#submitPicAllBtn:hover {
+    box-shadow: 0 1px 3px rgba(185, 185, 185, 0.5);
+    color: #666666;
+    background-color: #dddddd;
+}
+
+.picDisplayBox-detail {
+    margin: 5px 25px 5px 30px;
+    width: 200px;
+    height: 160px;
+    position:absolute;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(36, 37, 38, 0.08);
+    overflow: hidden;
+}

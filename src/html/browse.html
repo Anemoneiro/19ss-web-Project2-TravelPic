@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>浏览 - TravelPic</title>
+        <meta name="description" content="browse page">
+        <meta name="author" content="Xinran Duan">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.bootcss.com/jquery-confirm/3.2.3/jquery-confirm.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/header&footer.css" rel="stylesheet" type="text/css">
+        <link href="../css/piccss.css" rel="stylesheet" type="text/css">
+        <link href="../css/browse.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery-confirm/3.2.3/jquery-confirm.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery.form/4.2.1/jquery.form.js"></script>
+    </head>
+
+    <body>
+        <div id="root">
+            <header>
+                <nav>
+                    <div class="logo">
+                        <a href="homepage.html">
+                            <img src="../../img/icons/travelpic_logo.png" alt="TravelPic_logo" class="TravelPic_logo">
+                        </a>
+                    </div>
+                    <div class="HeaderTabs">
+                        <ul>
+                            <li><a href="homepage.html" class="topButton" id="Homepage">首页</a></li>
+                            <li><a href="browse.html" class="topButton" id="Browser">浏览</a></li>
+                            <li><a href="search.html" class="topButton" id="Search">搜索</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="UserInfo">
+                    <ul>
+                        <li>
+                            <a href="login.html" class="topButton" id="Login" style="display: none;">登录</a>
+                            <div href="" class="topButton" id="Personal" style="display: none;">个人中心</div>
+                            <div class="dropdown_col">
+                                <ul>
+                                    <li><a href="upload.html" class="topUserButton" id="Upload">上传</a> </li>
+                                    <li><a href="myphotos.html" class="topUserButton" id="MyPhoto">我的照片</a></li>
+                                    <li><a href="myfavorites.html" class="topUserButton" id="MyFavor">我的收藏</a></li>
+                                    <li><div class="topUserButton" id="Logout">登出</div></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="nav-browser">
+                <div class="nav-box-search">
+                    <div class="box-header">
+                        <h2 class="box-title">按标题搜索</h2>
+                    </div>
+                    <div class="box-body">
+                        <div class="navSearch">
+                            <input type="text" id="navSearchText" placeholder="标题长度小于200字符"></li>
+                            <input type="button" id="navSearchBtn" onclick="doSearch()"></li>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <div class="box-header">
+                        <h2 class="box-title">热门内容</h2>
+                    </div>
+                    <div class="box-body">
+                        <div class="navHotContent">
+                            <ul>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotContent" onclick="click_Hotbtn(event)">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotContent" onclick="click_Hotbtn(event)">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotContent" onclick="click_Hotbtn(event)">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotContent" onclick="click_Hotbtn(event)">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <div class="box-header">
+                        <h2 class="box-title">热门国家</h2>
+                    </div>
+                    <div class="box-body">
+                        <div class="navHotCountry">
+                            <ul>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotCountry" onclick="click_Hotbtn(event)">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotCountry" onclick="click_Hotbtn(event)">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotCountry" onclick="click_Hotbtn(event)">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotCountry" onclick="click_Hotbtn(event)">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <div class="box-header">
+                        <h2 class="box-title">热门城市</h2>
+                    </div>
+                    <div class="box-body">
+                        <div class="navHotCity">
+                            <ul>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotCity" onclick="click_Hotbtn(event)">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotCity" onclick="click_Hotbtn(event)">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotCity" onclick="click_Hotbtn(event)">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" name="hotCity" onclick="click_Hotbtn(event)">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-browse">
+                <div class="box-header">
+                    <h2 class="box-title">筛选</h2>
+                </div>
+                <div class="box-body">
+                    <div class="box-body-content">
+                        <!--box-body-filter-stars-here-->
+                        <div class="box-body-filter">
+                            <ul>
+                                <li>
+                                    <div class="dropdown-filter">
+                                        <select name="content-filter" id="content-filter">
+                                            <option value="" style="display: none;">请选择主题</option>
+                                            <option value="null">null</option>
+                                            <option value="scenery">scenery</option>
+                                            <option value="city">city</option>
+                                            <option value="people">people</option>
+                                            <option value="animal">animal</option>
+                                            <option value="building">building</option>
+                                            <option value="wonder">wonder</option>
+                                            <option value="other">other</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="dropdown-filter">
+                                        <select name="country-filter" id="country-filter" onchange="getCitiesOfCountry()">
+                                            <option value="" style="display: none;">请选择国家/地区</option>
+                                            <option value="null">null</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="dropdown-filter">
+                                        <select name="city-filter" id="city-filter">
+                                            <option value="" style="display: none;">请选择城市</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul><input type="button" value="筛选" id="filterBtn" onclick="click_Filterbtn()"></ul>
+                        </div>
+                        <!--box-body-filter-here-->
+                        <div class="box-body-searchNum">
+                            <span>搜索结果总数：</span>
+                            <span id="totalSize"></span>
+                        </div>
+
+                        <div class="box-body-filteResult">
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail" onclick="goToDetail(event)">
+                                    <div class="realPic"></div>
+                                </div>
+                            </div>
+
+                            <div class="turnPage">
+                                <span id="prevPage" onclick="goToPrevPage()"><</span> <span id="page-1" class="activePage" name="page" onclick="goToPage(event)">1</span> <span id="page-2" name="page" onclick="goToPage(event)">2</span> <span id="page-3" name="page" onclick="goToPage(event)">3</span> <span id="page-4" name="page" onclick="goToPage(event)">4</span> <span id="page-5" name="page" onclick="goToPage(event)">5</span> <span id="nextPage" onclick="goToNextPage()">></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="copyright">
+                Copyright© by Xinran Duan. All Rights Reserved. 备案号：沪ORZ备18307130295号-16
+            </footer>
+            <script src="../js/browse.js"></script>
+        </div>
+    </body>
+</html>

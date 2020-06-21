@@ -1,0 +1,278 @@
+#Browser {
+    color: #f7b157
+}
+
+h2 {
+    color: #333435;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*侧边栏区域，设置最小宽度防止内容溢出*/
+.nav-browser {
+    padding: 0 0 10px 40px;
+    width: 20%;
+    min-width: 205px;
+    position: absolute;
+    display: block;
+}
+
+.nav-box-search {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 90px;
+    padding: 10px;
+    overflow: hidden;
+    width: 200px;
+    position: relative;
+    display: block;
+}
+
+/*搜索区域美化，设置focus时阴影，按钮实现鼠标指针变为手形*/
+#navSearchText {
+    border-radius: 0.2rem;
+    border: 1px solid #d1d3e2;
+    position: absolute;
+    height: 20px;
+    outline: none; 
+    margin: 0 auto;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    transition: box-shadow 0.25s ease;
+    font-size: 14px;
+    width: 150px;
+}
+
+#navSearchText:focus{
+    box-shadow:0 1px 3px rgba(185, 185, 185, 0.5);
+}
+
+#navSearchBtn{
+    border: none;
+    background: #d1d1d1 url(../../img/icons/search.png) no-repeat center center;
+    background-size: 12px;
+    border-radius: 3px;
+    position: absolute;
+    left: 160px;
+    height: 23px;
+    width: 23px;
+    margin: 0 auto;
+    margin-left: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+#navSearchBtn:hover {
+    background: #b6b6b6 url(../../img/icons/search.png) no-repeat center center;
+    background-size: 12px;
+}
+
+.navHotBtn {
+    border: none;
+    color: #333333;
+    background:none;
+    height: 20px;
+    margin: 0 auto;
+    margin-left: 4px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 2.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.nav-box {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+    padding: 10px;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.nav-box ul {
+    padding-left: 5px;
+    
+}
+
+.nav-box input:hover {
+    color: #f7b157;
+    font-weight: bolder;
+}
+
+/*通过relative实现两栏排版*/
+.main-browse {
+    margin: 100px 0 30px 0;
+    width: 75%;
+    left: 250px;
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+    margin-right: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/*实现过滤器美化，hover时渐变阴影，改编选择器右侧标识图*/
+.box-body-filter ul{
+    display: inline-block;
+}
+
+.dropdown-filter {
+    width: 260px;
+    position: relative;
+    vertical-align: middle;
+    padding: 0;
+    background-color: #ffffff;
+    color: #555555;
+    border: 1px solid #d1d3e2;
+    text-shadow: none;
+    border-radius: 0.2em;
+    transition: box-shadow 0.25s ease;
+    z-index: 2;
+    height: 40px;
+}
+
+.dropdown-filter:hover {
+    box-shadow:0 1px 3px rgba(185, 185, 185, 0.5);
+}
+
+.dropdown-filter select {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url(../../img/icons/d-caret.png) no-repeat 15px center;
+    background-size: 15px 15px;
+    padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 2.5px;
+    overflow-scrolling: auto;
+}
+
+.dropdown-filter select:focus {
+    outline: none;
+}
+
+.dropdown-filter select option {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 2.5px;
+}
+
+/*筛选按钮美化*/
+#filterBtn{
+    background-color: #777777;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.2em;
+    position: relative;
+    height: 36px;
+    width: 75px;
+    margin: 0 auto;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    transition: box-shadow 0.25s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+}
+
+#filterBtn:hover {
+    box-shadow: 0 1px 3px rgba(185, 185, 185, 0.5);
+    color: #666666;
+    background-color: #dddddd;
+}
+
+.box-body-searchNum{
+    line-height: 150%;
+    width: calc(100%);
+    min-width: 450px;
+    padding-top: 6px;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.picDisplayBox-filter{
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: calc(25% - 40px);
+    min-width: 220px;
+    height: 220px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+.picDisplayBox-detail {
+    margin: 15px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(36, 37, 38, 0.08);
+    overflow: hidden;
+}
+
+/*通过清除浮动使翻页处于正确位置*/
+.turnPage {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    clear: both;
+    margin-top: 30px;
+    color: #333333;
+    font-size: 14px;
+    width: calc(50%);
+}
+
+.turnPage .activePage {
+    color: #f7b157;
+}
+
+.turnPage {
+    cursor: default;
+}
+
+.turnPage span {
+    cursor: pointer;
+}
+
+#prevPage {
+    cursor: pointer;
+}
+
+#nextPage {
+    cursor: pointer;
+}

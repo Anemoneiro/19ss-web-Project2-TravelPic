@@ -1,0 +1,177 @@
+#Search{
+    color: #3583fb;
+}
+
+/*实现自适应响应式布局，宽度随着页面大小变化而变化*/
+.main-search {
+    margin: 100px 15% 100px 12%;
+    width: calc(80%);
+    min-width: 500px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+    margin-right: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.box-body-search ul {
+    display: inline-block;
+    width: calc(95%);
+}
+
+.box-body-search ul li{
+    margin-top: 6px;
+    margin-left: 6px;
+    width: calc(100%);
+}
+
+.searchText {
+    border-radius: 0.2rem;
+    border: 1px solid #d1d3e2;
+    float: left;
+    height: 22px;
+    width: calc(100%);
+    outline: none; 
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/*更改多行文字框的高度*/
+textarea {
+    resize: none;
+    height: 100px !important ;
+}
+
+/*筛选按钮美化*/
+#searchBtn{
+    background-color: #777777;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.2em;
+    position: relative;
+    height: 30px;
+    width: 80px;
+    margin: 0 auto;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    transition: box-shadow 0.25s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 微软雅黑, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+}
+
+#searchBtn:hover {
+    box-shadow: 0 1px 3px rgba(185, 185, 185, 0.5);
+    color: #666666;
+    background-color: #dddddd;
+}
+
+.main-searchResult {
+    margin: 0 15% 0 12%;
+    width: calc(80%);
+    min-width: 500px;
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+    margin-right: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.box-body-searchItem{
+    line-height: 150%;
+    width: calc(100%);
+    min-width: 450px;
+    padding-top: 6px;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.box-body-searchNum{
+    line-height: 150%;
+    width: calc(100%);
+    min-width: 450px;
+    padding-top: 6px;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+/*和此前不同的是，因为不需要外部div容器，div过多会导致排版错误，此处外部容器为a标签*/
+.picDisplayBox-detail {
+    margin: 5px 25px 5px 30px;
+    width: 200px;
+    height: 160px;
+    position: relative;
+    display: inline-block;
+    left:10px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(36, 37, 38, 0.08);
+    overflow: hidden;
+}
+
+/*实现自适应响应式布局，页面过窄则文字描述自动移到下层*/
+.picDisplayBox-item {
+    position: relative;
+    width: 60%;
+    display: inline-block;
+    top: -15px;
+    /*position: absolute;
+    width: 630px;
+    left: 280px;*/
+}
+
+.picDisplayBox-item p{
+    margin: 0 10px;
+    font-size: 14px;
+    text-align: initial;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.turnPage {
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.turnPage .activePage {
+    color: #3583fb;
+}
+
+.turnPage {
+    cursor: default;
+}
+
+.turnPage span {
+    cursor: pointer;
+}
+
+#prevPage {
+    cursor: pointer;
+}
+
+#nextPage {
+    cursor: pointer;
+}
