@@ -93,7 +93,7 @@ if (isset($_SESSION['Username'])) {
                 } else if ($cityCode == 'null') {
                     $sql_modify = "UPDATE travelimage SET PATH='$picPath', Title='$title', Description='$description', CityCode=NULL, CountryCodeISO='$countryCodeISO', Content='$content' WHERE ImageID='$imageID'";
                 } else {
-                    "UPDATE travelimage SET PATH='$picPath', Title='$title', Description=NULL, CityCode='$cityCode', CountryCodeISO='$countryCodeISO', Content='$content' WHERE ImageID='$imageID'";
+                    $sql_modify = "UPDATE travelimage SET PATH='$picPath', Title='$title', Description=NULL, CityCode='$cityCode', CountryCodeISO='$countryCodeISO', Content='$content' WHERE ImageID='$imageID'";
                 }
 
                 $result_modify = $pdo->query($sql_modify);
